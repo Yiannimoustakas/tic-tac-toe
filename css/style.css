@@ -25,11 +25,23 @@ h1 {
   font-size: 30px;
 }
 
+h3 {
+  text-align: center;
+  font-size: 32px;
+  padding: 0;
+}
 h5 {
   display: inline-block;
   width: 40%;
   padding: 3%;
 }
+
+span {
+  color: black;
+  font-weight: bold;
+  font-size: 44px;
+}
+
 
 #winner {
   text-align: center;
@@ -43,13 +55,6 @@ h5 {
   border: 10px;
 }
 
-.borderOn {
-  border: 3px solid white;
-  display: inline-block;
-  margin: auto;
-  position: absolute;
-  min-width: inherit;
-}
 #pageDiv {
   top: 85px;
   width: 33%;
@@ -57,6 +62,7 @@ h5 {
   margin: auto;
   margin-left: 33%;
   border: 6px solid white;
+  box-shadow: 5px 2px 2px rgba(255, 255, 255, 0.6);
 }
 
 #whoWillWinDiv {
@@ -73,6 +79,7 @@ h5 {
   margin: auto;
   margin-left: 0%;
 }
+
 #player2Div {
   top: 0;
   width: 34%;
@@ -81,17 +88,22 @@ h5 {
   margin-left: 66%;
 }
 
-span {
-  color: black;
-  font-weight: bold;
-  font-size: 44px;
+#reset2 {
+  top: 550px;
+  width: 33%;
+  height: 20px;
+  margin-left: -1%;
+  border: 0;
 }
 
-h3 {
-  text-align: center;
-  font-size: 32px;
-  padding: 0;
+.borderOn {
+  border: 3px solid white;
+  display: inline-block;
+  margin: auto;
+  position: absolute;
+  min-width: inherit;
 }
+
 .winnerHeader {
   font-size: 16px;
 }
@@ -100,86 +112,54 @@ h3 {
   font-size: 55px;
 }
 
-/* .tile {
+.square {
+  border: 3px solid white;
+  display: inline-block;
+  margin: auto;
+  position: absolute;
+  min-width: inherit;
+}
 
-} */
+.square:hover {
+  border: 3px solid red;
+}
 
-#topL {
+.top {
   width: 33%;
   top: 150px;
   height: 125px;
 }
 
-#topM {
-  width: 33%;
-  margin-left: 33%;
-  top: 150px;
-  height: 125px;
-}
-#topR {
-  width: 34%;
-  margin-left: 66%;
-  top: 150px;
-  height: 125px;
-}
-#midL {
+.mid {
   width: 33%;
   top: 275px;
   height: 125px;
 }
-#midM {
+
+.bottom {
   width: 33%;
-  margin-left: 33%;
-  top: 275px;
-  height: 125px;
-}
-#midR {
-  width: 34%;
-  margin-left: 66%;
-  top: 275px;
-  height: 125px;
-}
-#bottomL {
-  width: 33%;
-  top: 400px;
-  height: 120px;
-}
-#bottomM {
-  width: 33%;
-  margin-left: 33%;
-  top: 400px;
-  height: 120px;
-}
-#bottomR {
-  width: 34%;
-  margin-left: 66%;
   top: 400px;
   height: 120px;
 }
 
-#reset {
-  top: 550px;
-  width: 20%;
-  height: 20px;
-  margin-left: 19%;
-  border: 0;
+.M {
+  margin-left: 33%;
 }
-#reset2 {
-  top: 550px;
-  width: 20%;
-  height: 20px;
-  margin-left: 55%;
-  border: 0;
+.R {
+  width: 34%;
+  margin-left: 66%;
 }
+
 
 .btn {
   color: red;
+  max-width: 30vw!important;
   background: transparent;
   border: 2px solid red;
   border-radius: 6px;
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 16px 16vw;
   text-align: center;
   display: inline-block;
   font-size: 16px;
@@ -199,10 +179,66 @@ h3 {
   background-color: orange;
   color: black;
   border: 2px solid red;
+  box-shadow: 5px 2px 2px rgba(255, 0, 0, 0.9);
 }
 .btn1:hover {
      background-color: red;
      color: white;
-     -webkit-transform:scale(1.2);
-    transform:scale(1.2);
+     -webkit-transform:scale(1.05);
+    transform:scale(1.05);
+}
+
+.leftSide {
+  display: inline-block;
+  margin: auto;
+  position: absolute;
+  min-width: inherit;
+  position: absolute;
+  width: 33%;
+  height: 69%;
+  top: 10%;
+  left: 0%;
+  text-align: center;
+}
+
+.rightSide {
+  display: inline-block;
+  margin: auto;
+  position: absolute;
+  min-width: inherit;
+  position: absolute;
+  width: 33%;
+  height: 69%;
+  top: 10%;
+  left: 68%;
+  text-align: center;
+}
+
+.arrow1 {
+  display: inline-block;
+  margin: auto;
+  position: relative;
+  min-width: inherit;
+  top: 3%;
+  left: 22%;
+}
+
+.arrow2 {
+  display: inline-block;
+  margin: auto;
+  position: relative;
+  min-width: inherit;
+  top: 3%;
+  left: -20%;
+  -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+.themeBoard {
+  height: 10%;
+  width: 10%
 }
