@@ -88,24 +88,33 @@ const newImg = function() {
   }
 }
 
+
+const nullCells = function() {
+  let newBoardArray = [];
+  for (var i = 0; i < 9; i++) {
+    if (board[i] === null) {
+      newBoardArray.push(i);
+      // console.log(`${nullCells}`);
+    }
+  }
+  return newBoardArray; ////provide an array of empty nullCells.
+};
+
+
 const AI = function() {
  console.log("AI IS RUNNING")
 //   	// AI function will straight away call the tactical function. This will read the prescribed winning conditions and if the square is available it will play it. Otherwise it will just play a random square finding an integer between 1-9.
-
 	// Function for when O plays randomly
 		for (var i = 0; i < 10; i++) {
 		// Loop to find a valid play
-
 			var randomNumber = Math.floor((Math.random() * 9) + 1);
 			var randomSquare = board[randomNumber];
-
 			if (board[i] === null) {
-
 				board[randomNumber] = "O"
-				checkWinner();
+				checkWinner("O");
 			}
 		}
-  checkWinner();
+  checkWinner(p2);
   playerSwitch();
 }
 
@@ -132,7 +141,7 @@ $(document).ready(function(){
       board[ boardIndex ] = p2;
     }
     $currentSquare.find("h1").html(currentPlayer); //Adds player's value to the screen
-    checkWinner(currentPlayer); //checks for winner
+    checkWinner(p1); //checks for winner
   });
 
   //This is going to reset the player scores

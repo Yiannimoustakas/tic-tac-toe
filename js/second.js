@@ -113,7 +113,7 @@ const AI = function() {
   		var randomSquare = board[randomNumber];
   		if (randomSquare === null) {
   			board[randomNumber] = p2;
-        checkWinner();
+        checkWinner(p2);
         // playerSwitch();
         $(`.square#${randomNumber}`).find("h1").html(p2);
         return;
@@ -193,7 +193,7 @@ $(document).ready(function(){
       const boardIndex = parseInt( this.id ); //Board logic
       board[ boardIndex ] = p1; //gives p1 the board piece
       $currentSquare.find("h1").html(p1); //Adds player's value to the screen
-      checkWinner(currentPlayer); //checks for winner
+      checkWinner(p1); //checks for winner
       AI();
       // checkWinner();
       playerSwitch();
