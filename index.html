@@ -57,21 +57,27 @@
       <button class="btn btn1">reset game</button>
     </div> -->
     <div class="borderOn" id="reset2">
-      <button class="btn btn1">reset score</button>
+      <button class="btn btn1" id="resetButton">reset score</button>
     </div>
   </div>
   <div class="leftSide">
     <div class="arrow1">
-      <img src="images/star.png" alt="Pointer Icon">
+      <img class="newSchool" src="images/star.png" alt="Pointer Icon">
     </div>
   </div>
   <div class="rightSide">
     <div class="arrow2">
-      <img src="images/star.png" alt="Pointer Icon">
-      <!-- <div class="borderOn themeBoard"></div> -->
+      <img class="newSchool" src="images/star.png" id="flip" alt="Pointer Icon">
+      <div class="borderOn" id="themeBoard">
+        <div class="borderOn" id="themeBoardHeading">
+          Theme Picker
+        </div>
+        <button class="btn btn1" id="monoTheme">Old School</button>
+        <button class="btn btn1" id="newTheme">New School</button>
+      </div>
     </div>
   </div>
   <script src="js/jquery.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/second.js"></script>
 </body>
 </html>

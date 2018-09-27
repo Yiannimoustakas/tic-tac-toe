@@ -53,6 +53,7 @@ span {
   width: 99%;
   line-height: 20px;
   border: 10px;
+  border: 0;
 }
 
 #pageDiv {
@@ -94,6 +95,65 @@ span {
   height: 20px;
   margin-left: -1%;
   border: 0;
+}
+
+#themeBoard {
+  top: 300px;
+  left: 0px;
+  width: 250px;
+  height: 190px;
+}
+
+#themeBoardHeading {
+  width: 99%;
+  height: 20%;
+  left: 0%;
+  font-size: 40px;
+}
+
+#flip {
+  -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+#monoTheme {
+  color: #9bbc0f;
+  max-width: 10px;
+  background: #306230;
+  border: 2px solid #0f380f;
+  padding: 10px 5vw;
+  font-size: 10px;
+  margin: 4px 2px;
+  margin-top: 70px;;
+  box-shadow: 5px 2px 2px #0f380f;
+}
+#monoTheme:hover {
+     background-color: #9bbc0f;
+     color: #0f380f;
+     -webkit-transform:scale(1.05);
+    transform:scale(1.05);
+}
+
+#newTheme {
+  color: red;
+  max-width: 10px;
+  background: orange;
+  border: 2px solid red;
+  padding: 10px 5vw;
+  font-size: 10px;
+  margin: 4px 2px;
+  margin-top: 30px;;
+  box-shadow: 5px 2px 2px red;
+}
+#newTheme:hover {
+     background-color: red;
+     color: white;
+     -webkit-transform:scale(1.05);
+    transform:scale(1.05);
 }
 
 .borderOn {
@@ -159,10 +219,10 @@ span {
   border-radius: 6px;
   border: none;
   color: white;
-  padding: 16px 16vw;
+  padding: 16px 16.5vw;
   text-align: center;
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
   margin: 4px 2px;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
@@ -230,15 +290,40 @@ span {
   min-width: inherit;
   top: 3%;
   left: -20%;
-  -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
 }
 
-.themeBoard {
-  height: 10%;
-  width: 10%
+/* .newSchool {
+  background-image: url("images/monostar.png");
+} */
+
+/*  button handler elements
+
+.monoImp1 {
+  color: #9bbc0f !important;
 }
+.monoImp2 {
+  color: #0f380f !important;
+}
+.monoImp3{
+  background: #0f380f !important;
+}
+.monoImp4{
+  background-color: #9bbc0f !important;
+}
+
+.monoImp5{
+  background: #306230 !important;
+}
+.monoImp6{
+  border: 3px solid #9bbc0f !important;
+}
+.monoImp7{
+  border: 2px solid #0f380f !important;
+}
+.monoImp8{
+  box-shadow: 5px 2px 2px #0f380f !important;
+}
+.monoImp9{
+  border: 0 !important;
+}
+*/
