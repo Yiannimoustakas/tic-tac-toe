@@ -4,7 +4,7 @@
 https://yiannimoustakas.github.io/tic-tac-toe/
 
 ## Project0 Description
-This is our initial project of the GA WDI29 course. It is supposed to display a summation of the content from the first two weeks of the course. It includes a HTML file, CSS stylesheet and a Javascript script. Our class was given a total of one week to complete the project. The main goal of the project was to create a **fully playable** tic-tac-toe game. We were also given a list of additional features, which we could choose to include or omit depending on the student's discretion.
+This is our initial project of the GA WDI29 course. The goal of this project was to display a summation of the content learnt over the first two weeks of the course. It includes a HTML file, CSS stylesheet and a Javascript script. Our class was given a total of one week to complete the project. The main goal of the project was to create a **fully playable** tic-tac-toe game. We were also given a list of additional features, which we could choose to include or omit depending on the student's discretion.
 
 ## This Is A Screenshot Of My Final Version
 ![Imgur](https://i.imgur.com/h7bWIHq.png)
@@ -27,13 +27,13 @@ My feature creep ended on Thursday night before our presentation. You can see so
 ## TECH USED FOR Project0
 * JavaScript
 * HTML
-* CSS 
+* CSS
 * jQuery
 
-##Project Focus
+## Project Focus
 My main goal of project0 was firstly to display all the skills I have learnt in the first two weeks of the course. Coming from 0 experience in coding, I believe I have shown an enormous improvement, and something I had only dreamed of doing some 3 weeks ago.
 I put a lot of time and effort into keeping the JavaScript as short and concise as my skills would let me at the time. I had cut my code in half at least 4 times in this project after a few refactoring sessions but I know as my skills advance I will be able to do even less.
-I also made very sure that my code had a _**separation of concern**_ between the *game logic* and *jQuery* display. I believe that it worked out in that the game logic did not include any display code and the display code did not include any game logic.
+I also made very sure that my code had a _**SEPARATION OF CONCERN**_ between the *game logic* and *jQuery* display. I believe that it worked out in that the game logic did not include any display code and the display code did not include any game logic.
 
 ## What I Would Add In V2
 * My first addition would be to toggle between AI and Multiplayer. On my multiplayer mode that **I have already written**, the star sitting on the left of the screen would toggle left and right indicating which players turn it was.
