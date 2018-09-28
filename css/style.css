@@ -68,6 +68,7 @@ span {
 
 #whoWillWinDiv {
   top: 0;
+  background: transparent;
   width: 33%;
   height: 150px;
   margin: auto;

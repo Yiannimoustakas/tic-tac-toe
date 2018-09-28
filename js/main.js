@@ -27,7 +27,7 @@ const clearBoard = function () {
   $("#winner").html("?")
   $("#winner").css("color", "red");
   $(".winnerHeader").css("color", "black");
-  $("#whoWillWinDiv").css("backgroundColor", "orange")
+  $("#whoWillWinDiv").css("backgroundColor", "transparent")
   board = [null, null, null, null, null, null, null, null, null];
 }
 
@@ -169,6 +169,7 @@ $(document).ready(function(){
     $("body").css("background", "#306230");
     $(".borderOn").css("border", "3px solid #9bbc0f");
     $(".square").css("border", "3px solid #9bbc0f");
+    $("#winner").css("color", "#9bbc0f")
     $("#resetButton").css({
       background: "#306230",
       boxShadow: "5px 2px 2px #0f380f",
@@ -191,6 +192,7 @@ $(document).ready(function(){
     $("div h3").css("color", "black");
     $("div h5").css("color", "white");
     $("span").css("color", "black");
+    $("#winner").css("color", "black")
     $("body").css("background", "orange");
     $(".borderOn").css("border", "3px solid white");
     $(".square").css("border", "3px solid white");
