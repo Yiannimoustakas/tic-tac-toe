@@ -20,7 +20,7 @@ My feature creep ended on Thursday night before our presentation. You can see so
 * My final feature added was the games Artificial Intelligence. The player 2 or the "computer" will play against player 1. It is a very basic form of intelligence and has very little concept of winning the game.
 
 ## List Of Any Known Bugs
-1. After an initial win, the middle board will stay orange. This is due the changing of the background colour after a win is announced. Was not fixed by the final day of the project.
+1. ~~After an initial win, the middle board will stay orange. This is due the changing of the background colour after a win is announced. Was not fixed by the final day of the project.~~ **Last Minute Fix** 
 2. The AI is *not very* intelligent. It will only work to a random free square within the board. My AI update with tactical moves would only result in the AI taking over multiple squares of the board within one turn. With a bit more time I would have been able to fix this.
 3. I also ran out of time trying to work out a way to toggle between AI and 2 player. It would have been a nice add on, but again, ran out of time.
 
